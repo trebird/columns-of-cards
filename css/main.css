@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
-  font-size: .875rem;
 }
 
 *, *::before, *::after {
@@ -27,6 +26,7 @@ h2 {
   justify-content: space-between;
   align-items: stretch;
   margin: 1.5rem;
+  margin-top: 0;
   font-size: .875rem;
   border-left: solid .5px #000;
   border-right: solid .5px #000;
@@ -57,9 +57,6 @@ h3 {
 p {
   margin: 0;
   padding-bottom: 1.5rem;
-}
-
-.btn p {
   flex-grow: 1;
 }
 
@@ -87,16 +84,23 @@ p {
   padding: 1.5rem;
 }
 
-.btn, .btn-small {
+.btn-small {
   display: block;
   text-decoration: none;
   background-color: #333;
   padding: .5rem;
+  margin-top: .75rem;
   border-radius: 5px;
   color: #fff;
   font-size: .875rem;
 }
 
-.btn:hover, .btn-small:hover {
+.columns .btn {
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+
+.btn:hover .btn-small {
   background-color: #000;
 }
