@@ -47,6 +47,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 div img {
@@ -102,7 +103,6 @@ p {
 .btn {
   display: block;
   text-decoration: none;
-  background-color: #333;
   padding: .5rem;
   margin-top: .75rem;
   border-radius: 5px;
@@ -116,6 +116,15 @@ p {
   border: 0;
 }
 
+.btn {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
+}
 .btn:hover, .btn-small:hover {
   background-color: #000;
 }
